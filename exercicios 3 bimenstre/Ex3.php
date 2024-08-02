@@ -8,12 +8,13 @@
 </head>
 <body>
     <?php
-        function ultimoItem($a, $b, $c) {
-            $meuArray = array(0 =>$a, 1=>$b, 2=>$c);
-            return $meuArray[2];
+        function pegarUltimoItem($array) {
+            return end($array);
         }
 
-        echo "O último item deste array [2, 43, 15] é" . ultimoItem([2, 43, 15]) . "<br>";
+        echo pegarUltimoItem([1, 2, 3]) . "<br>";
+        echo pegarUltimoItem([71, 13, 25]) . "<br>";
+        echo pegarUltimoItem([62, 10, 7]) . "<br>";
     ?>
 </body>
 </html>
