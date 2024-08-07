@@ -9,12 +9,10 @@
     <?php 
         function checagem($array, $numero) {
             if (in_array($numero, $array)) {
-                echo "True";
+                return "True";
             } else {
-                echo "False";
+                return "False";
             }
-
-            return in_array($numero, $array);
         }
 
         echo checagem([1, 2, 3, 4, 5], 4) . "<br>";
